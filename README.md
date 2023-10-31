@@ -1,1 +1,1 @@
-# 2023_Chong_CommunBiol_Gripstrength_FC
+# Higher handgrip strength is linked to higher salience/ventral attention functional network segregation in older adults
