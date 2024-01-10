@@ -88,8 +88,8 @@ for (n in 1:length(nuisancecov)){
           # total effect
           total := c + (a*b)
           '
-      #fit <- sem(model, data = resid, se="bootstrap", bootstrap = 5000)
-      fit <- sem(model, data = resid, se="bootstrap", bootstrap = 100)
+      fit <- sem(model, data = resid, se="bootstrap", bootstrap = 5000)
+
       temp=data.frame(covariate = nuisancecov[n], predictor="handgripstrength", cognition=cognitivevar[c], mediator=Varnames[i], parameterEstimates(fit))
       
       if (n==1 & i==1 & c==1){
