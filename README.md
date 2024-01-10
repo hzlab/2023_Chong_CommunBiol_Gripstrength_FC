@@ -46,6 +46,8 @@ Other files:
 
 ## Assessment of Functional Segregation
 
+Global and network-level measures of system segregation were calculated in accordance with [Chan et al. PNAS, 2014](https://www.pnas.org/doi/abs/10.1073/pnas.1415122111), which quantifies differences in within-network connections relative to between-network connections.
+
 The code and supporting files for the assesssment of functional segregation are located in the `Segregation` folder.
 
 ### Main files:
@@ -65,7 +67,7 @@ The code and supporting files for the assesssment of functional segregation are 
 
 ## Association Analyses
 
-All associations between handgrip strength, functional connectivity and cognitive performance were performed using linear regression models on R.
+All associations between handgrip strength, functional connectivity and cognitive performance were performed using linear regression models using R 4.04 on Rstudio.
 
 The code and supporting files for the association analyses are located in the `AssociationAnalyses` folder.
 
@@ -124,6 +126,8 @@ conda activate Decode
 ----
 
 ## Mediation Analyses
+
+Mediation analyses were conducted to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition. The analyses were conducted using the [lavaan](https://cran.r-project.org/web/packages/lavaan/index.html) package on R, and the significance of the indirect effects was evaluated using bootstrapped (5000 bootstrap iterations) confidence intervals.
 
 The code for the mediation analyses is located in the `MediationAnalyses` folder.
 
