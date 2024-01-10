@@ -46,7 +46,7 @@ Other files:
 
 ## Assessment of Functional Segregation
 
-All code and supporting files for the assesssment of functional segregation are located in the `Segregation` folder.
+The code and supporting files for the assesssment of functional segregation are located in the `Segregation` folder.
 
 ### Main files:
 
@@ -65,7 +65,9 @@ All code and supporting files for the assesssment of functional segregation are 
 
 ## Association Analyses
 
-All code and supporting files for the association analyses are located in the `AssociationAnalyses` folder.
+All associations between handgrip strength, functional connectivity and cognitive performance were performed using linear regression models on R.
+
+The code and supporting files for the association analyses are located in the `AssociationAnalyses` folder.
 
 ### Main files:
 
@@ -92,7 +94,7 @@ All code and supporting files for the association analyses are located in the `A
 
 Functional decoding was performed using the Neurosynth ROI association approach on [NiMARE](https://nimare.readthedocs.io/en/stable/installation.html) v0.0.12 package for Python, which correlates the mean modeled activation values within the binarized ROI with the term weights of all 50 topics in the Neurosynth dataset. 
 
-All code and supporting files for the functional decoding analyses are located in the `FunctionalDecoding` folder.
+The code and supporting files for the functional decoding analyses are located in the `FunctionalDecoding` folder.
 
 ### Environment setup
 
