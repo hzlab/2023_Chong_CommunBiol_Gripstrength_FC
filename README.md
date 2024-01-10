@@ -15,10 +15,10 @@ Converging evidence suggests that handgrip strength is linked to cognitive funct
 ## Usage
 
 Please refer to the respective sections for more information on the code used:
-* [Assessment of Functional Segregation](##assessment-of-functional-segregation)
-* [Association Analyses](##association-analyses)
-* [Functional Decoding](##functional-decoding)
-* [Mediation Analyses](##mediation-analyses)
+* [Assessment of Functional Segregation](#assessment-of-functional-segregation)
+* [Association Analyses](#association-analyses)
+* [Functional Decoding](#functional-decoding)
+* [Mediation Analyses](#mediation-analyses)
 
 Sample data for the above analyses are also located in the SampleData folder. Details of the sample data provided are given below:
 * `FCmatrices/`:
