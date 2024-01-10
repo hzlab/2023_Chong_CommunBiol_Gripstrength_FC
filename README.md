@@ -15,40 +15,46 @@ Converging evidence suggests that handgrip strength is linked to cognitive funct
 ## Usage
 
 Please refer to the respective sections for more information on the code used:
-* [Assessment of Functional Segregation] (###assessment-of-functional-segregation)
-* [Association Analyses] (###association-analyses)
-* [Functional Decoding] (###functional-decoding)
-* [Mediation Analyses] (###mediation-analyses)
+* [Assessment of Functional Segregation](###assessment-of-functional-segregation)
+* [Association Analyses](###association-analyses)
+* [Functional Decoding](###functional-decoding)
+* [Mediation Analyses](###mediation-analyses)
 
 Sample data for the above analyses are also located in the SampleData folder. Details of the sample data provided are given below:
-* FCmatrices/
+* `FCmatrices/`
 	* Subj001.mat: 142 x 142 functional connectivity matrix for a specific subject (e.g., Subj001)
 	* subjectlist.txt: text file containing the list of all subject IDs (each subject ID is specified in a separate row)
-* Demographic.csv: spreadsheet containing demographic, cognitive, handgrip strength and other participant characteristics
-* Handgripstrength-relatedFCmeasures.csv: spreadsheet containing select subject-level functional connectivity measures that showed significant associations with handgrip strength
-* Segregationmeasures.csv: spreadsheet containing global and network-level segregation measures of each subject
-* SVA_InterIntraNetworkFCmeasures.csv: spreadsheet containing salience/ventral attention inter- and intra-network functional connectivity measures for each subject
-* SVA_IntraNetworkRegionalFCmeasures.csv: spreadsheet containing salience/ventral attention intra-network regional functional connectivity measures for each subject
+* `Demographic.csv`: spreadsheet containing demographic, cognitive, handgrip strength and other participant characteristics
+* `Handgripstrength-relatedFCmeasures.csv`: spreadsheet containing select subject-level functional connectivity measures that showed significant associations with handgrip strength
+* `Segregationmeasures.csv`: spreadsheet containing global and network-level segregation measures of each subject
+* `SVA_InterIntraNetworkFCmeasures.csv`: spreadsheet containing salience/ventral attention inter- and intra-network functional connectivity measures for each subject
+* `SVA_IntraNetworkRegionalFCmeasures.csv`: spreadsheet containing salience/ventral attention intra-network regional functional connectivity measures for each subject
 
 Other files:
 `Parcellation_142ROIs.nii`: Nifti file containing all regions-of-interest used in the study
 
-### Assessment of Functional Segregation
 
-#### Main files:
+----
+
+## Assessment of Functional Segregation
+
+### Main files:
 
 `CalculateSegregation.m`: Calculates system segregation for each subject and saves the values as a table in a csv file.
 
-#### Supporting files:
+### Supporting files:
 
 `systemsegregation.m`: Function file that generates global and network-level system segregation values given the functional connectivity matrix and the network assignment of the parcellation used
 `Parcellation_142ROIs_networkassignment.mat`
 * p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network).
 * networknames: corresponding network labels. The labels are ordered in the same manner as the network assignment in variable p (i.e., value of 1 pertains to the default network, which is the first label in the variable network names).
 
-### Association Analyses
 
-#### Main files:
+----
+
+## Association Analyses
+
+### Main files:
 
 `AssociationsbetCognition_HandgripStrength.R`: Runs linear regression analyses to examine the associations between handgrip strength and various cognitive scores. The results are saved in a csv file.
 
@@ -62,21 +68,24 @@ Other files:
 
 `Validation_AssociationsbetCognition_FC.R`: Runs validation analyses where the associations between the handgrip-strength related functional connectivity measures and various cognitive scores are repeated additionally controlling for various nuisance covariates. The results are saved in a csv file.
 
-#### Supporting files:
+### Supporting files:
 
 `RunLM_Functions.R`: Function file that organises and outputs the results to a data frame.
 
-### Functional Decoding
 
-Functional decoding was performed using the Neurosynth ROI association approach on [NiMARE] (https://nimare.readthedocs.io/en/stable/installation.html) v0.0.12 package for Python, which correlates the mean modeled activation values within the binarized ROI with the term weights of all 50 topics in the Neurosynth dataset. 
+----
 
-#### Environment setup
+## Functional Decoding
+
+Functional decoding was performed using the Neurosynth ROI association approach on [NiMARE](https://nimare.readthedocs.io/en/stable/installation.html) v0.0.12 package for Python, which correlates the mean modeled activation values within the binarized ROI with the term weights of all 50 topics in the Neurosynth dataset. 
+
+### Environment setup
 
 Create and activate conda environment named Decode from Decode_environment.yml
 `conda env create -f Decode_environment.yml`
 `conda activate Decode`
 
-#### Running functional decoding
+### Running functional decoding
 
 #### Main files:
 
@@ -90,9 +99,12 @@ Create and activate conda environment named Decode from Decode_environment.yml
 `ROI_069_SalVentAttn_R_MCC_MPC.nii`: Binarized nifti image of the right midcingulate/medial parietal cortex
 `ROI_074_SalVentAttn_R_AI.nii`: Binarized nifti image of the right anterior insula
 
-### Mediation Analyses
 
-#### Main files: 
+----
+
+## Mediation Analyses
+
+### Main files: 
 
 `Mediation.R`: Runs mediation analyses to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition
 
