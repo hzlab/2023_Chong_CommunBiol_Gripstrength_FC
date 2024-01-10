@@ -76,9 +76,11 @@ Functional decoding was performed using the Neurosynth ROI association approach 
 
 ### Environment setup
 
-Create and activate conda environment named Decode from Decode_environment.yml
-<p>conda env create -f Decode_environment.yml<br>
-conda activate Decode</p>
+Create and activate conda environment named `Decode` from `Decode_environment.yml`
+```sh
+conda env create -f Decode_environment.yml
+conda activate Decode
+```
 
 ### Running functional decoding
 
