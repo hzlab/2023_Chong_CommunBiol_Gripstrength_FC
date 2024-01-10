@@ -40,14 +40,14 @@ Other files:
 
 ### Main files:
 
-`CalculateSegregation.m`: Calculates system segregation for each subject and saves the values as a table in a csv file.
+* `CalculateSegregation.m`: Calculates system segregation for each subject and saves the values as a table in a csv file.
 
 ### Supporting files:
 
-`systemsegregation.m`: Function file that generates global and network-level system segregation values given the functional connectivity matrix and the network assignment of the parcellation used
-`Parcellation_142ROIs_networkassignment.mat`
-* p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network).
-* networknames: corresponding network labels. The labels are ordered in the same manner as the network assignment in variable p (i.e., value of 1 pertains to the default network, which is the first label in the variable network names).
+* `systemsegregation.m`: Function file that generates global and network-level system segregation values given the functional connectivity matrix and the network assignment of the parcellation used
+* `Parcellation_142ROIs_networkassignment.mat`
+	* p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network).
+	* networknames: corresponding network labels. The labels are ordered in the same manner as the network assignment in variable p (i.e., value of 1 pertains to the default network, which is the first label in the variable network names).
 
 
 ----
@@ -56,21 +56,16 @@ Other files:
 
 ### Main files:
 
-`AssociationsbetCognition_HandgripStrength.R`: Runs linear regression analyses to examine the associations between handgrip strength and various cognitive scores. The results are saved in a csv file.
-
-`AssociationsbetFC_HandgripStrength.R`: Runs linear regression analyses to examine the associations between the various functional connectivity measures (e.g., segregation, inter- and intra-network functional connectivity) and handgrip strength. The results are saved in a csv file.
-
-`AssociationsbetCognition_FC.R` Runs linear regression analyses to examine the associations between the handgrip-strength related functional connectivity measures and various cognitive scores. The results are saved in a csv file.
-
-`Validation_AssociationsbetCognition_HandgripStrength.R`: Runs validation analyses where the associations between handgrip strength and various cognitive scores are repeated additionally controlling for various nuisance covariates (e.g., waist-hip ratio, geriatric depression scores etc.). The results are saved in a csv file.
-
-`Validation_AssociationsbetFC_HandgripStrength.R`: Runs validation analyses where the associations between the various functional connectivity measures and handgrip strength are repeated additionally controlling for various nuisance covariates. The results are saved in a csv file.
-
-`Validation_AssociationsbetCognition_FC.R`: Runs validation analyses where the associations between the handgrip-strength related functional connectivity measures and various cognitive scores are repeated additionally controlling for various nuisance covariates. The results are saved in a csv file.
+* `AssociationsbetCognition_HandgripStrength.R`: Runs linear regression analyses to examine the associations between handgrip strength and various cognitive scores. The results are saved in a csv file.
+* `AssociationsbetFC_HandgripStrength.R`: Runs linear regression analyses to examine the associations between the various functional connectivity measures (e.g., segregation, inter- and intra-network functional connectivity) and handgrip strength. The results are saved in a csv file.
+* `AssociationsbetCognition_FC.R` Runs linear regression analyses to examine the associations between the handgrip-strength related functional connectivity measures and various cognitive scores. The results are saved in a csv file.
+* `Validation_AssociationsbetCognition_HandgripStrength.R`: Runs validation analyses where the associations between handgrip strength and various cognitive scores are repeated additionally controlling for various nuisance covariates (e.g., waist-hip ratio, geriatric depression scores etc.). The results are saved in a csv file.
+* `Validation_AssociationsbetFC_HandgripStrength.R`: Runs validation analyses where the associations between the various functional connectivity measures and handgrip strength are repeated additionally controlling for various nuisance covariates. The results are saved in a csv file.
+* `Validation_AssociationsbetCognition_FC.R`: Runs validation analyses where the associations between the handgrip-strength related functional connectivity measures and various cognitive scores are repeated additionally controlling for various nuisance covariates. The results are saved in a csv file.
 
 ### Supporting files:
 
-`RunLM_Functions.R`: Function file that organises and outputs the results to a data frame.
+* `RunLM_Functions.R`: Function file that organises and outputs the results to a data frame.
 
 
 ----
@@ -89,15 +84,14 @@ Create and activate conda environment named Decode from Decode_environment.yml
 
 #### Main files:
 
-`Part1_DownloadLDA50database.ipynb`: Downloads the LDA50 database from Neurosynth and converts it to NiMARE dataset file
-
-`Part2_Functionaldecoding.ipynb`: Loads the downloaded LDA50 database and performs discrete functional decoding using the Neurosynth ROI association method
+* `Part1_DownloadLDA50database.ipynb`: Downloads the LDA50 database from Neurosynth and converts it to NiMARE dataset file
+* `Part2_Functionaldecoding.ipynb`: Loads the downloaded LDA50 database and performs discrete functional decoding using the Neurosynth ROI association method
 
 #### Supporting files:
 
-`ROI_056_SalVentAttn_L_PI_RO.nii`: Binarized nifti image of the left posterior insula/frontal operculum region
-`ROI_069_SalVentAttn_R_MCC_MPC.nii`: Binarized nifti image of the right midcingulate/medial parietal cortex
-`ROI_074_SalVentAttn_R_AI.nii`: Binarized nifti image of the right anterior insula
+* `ROI_056_SalVentAttn_L_PI_RO.nii`: Binarized nifti image of the left posterior insula/frontal operculum region
+* `ROI_069_SalVentAttn_R_MCC_MPC.nii`: Binarized nifti image of the right midcingulate/medial parietal cortex
+* `ROI_074_SalVentAttn_R_AI.nii`: Binarized nifti image of the right anterior insula
 
 
 ----
@@ -106,7 +100,7 @@ Create and activate conda environment named Decode from Decode_environment.yml
 
 ### Main files: 
 
-`Mediation.R`: Runs mediation analyses to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition
+* `Mediation.R`: Runs mediation analyses to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition
 
 
 
