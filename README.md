@@ -21,9 +21,9 @@ Please refer to the respective sections for more information on the code used:
 * [Mediation Analyses](###mediation-analyses)
 
 Sample data for the above analyses are also located in the SampleData folder. Details of the sample data provided are given below:
-* `FCmatrices/`
-	* Subj001.mat: 142 x 142 functional connectivity matrix for a specific subject (e.g., Subj001)
-	* subjectlist.txt: text file containing the list of all subject IDs (each subject ID is specified in a separate row)
+* `FCmatrices/`:
+	* `Subj001.mat`: 142 x 142 functional connectivity matrix for a specific subject (e.g., Subj001)
+	* `subjectlist.txt`: text file containing the list of all subject IDs (each subject ID is specified in a separate row)
 * `Demographic.csv`: spreadsheet containing demographic, cognitive, handgrip strength and other participant characteristics
 * `Handgripstrength-relatedFCmeasures.csv`: spreadsheet containing select subject-level functional connectivity measures that showed significant associations with handgrip strength
 * `Segregationmeasures.csv`: spreadsheet containing global and network-level segregation measures of each subject
