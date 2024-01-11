@@ -5,7 +5,7 @@
 # 2) FCfile: name and path of spreadsheet containing functional connectivity measures
 #    This spreadsheet could be the segregation measures ("Segregationmeasures.csv"), 
 #    salience/ventral attention inter- and intra-network FC measures ("SVA_InterIntraNetworkFCmeasures.csv"), or
-#    salience/ventral attention regional FC measures ("SVA_RegionalFCmeasures.csv")
+#    salience/ventral attention regional FC measures ("SVA_IntraNetworkRegionalFCmeasures.csv")
 # 3) outputfile: name and path of output spreadsheet containing results of the linear regression analyses
 #    e.g., FCfile: "Segregationmeasures.csv",  outputfile = "Validation_Assoc_handgripstrength_segregation.csv"
 #          FCfile: "SVA_InterIntraNetworkFCmeasures.csv",  outputfile = "Validation_Assoc_handgripstrength_SVAinterintraFC.csv"
@@ -19,7 +19,7 @@ rm (list = ls())
 # Specify paths (CHANGE THIS!!)
 demofile = '/XXX/SampleData/Demographic.csv'
 FCfile = '/XXX/SampleData/Segregationmeasures.csv'
-outputfile = '/XXX/AssociationAnalyses/Assoc_handgripstrength_segregation.csv'
+outputfile = '/XXX/AssociationAnalyses/Validation_Assoc_handgripstrength_segregation.csv'
 functiondir = '/XXX/AssociationAnalyses/RunLM_Functions.R'
 nuisancecov = c('waisthipratio','bmi','gds','MMSE','timeinterval_days','GMV')
 
