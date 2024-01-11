@@ -73,7 +73,7 @@ end
 
 %% Write segregation measures of all subjects to a csv file
 SegregationT=array2table([sublist, num2cell([globalseg, seg])],'VariableNames',['SubID','Global', networknames]);
-writetable(SegregationT, [outputdir, 'Segregationmeasures.csv']);    
+writetable(SegregationT, outputfile);    
 
 
 
