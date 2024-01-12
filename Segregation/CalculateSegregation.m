@@ -1,6 +1,10 @@
 % Compute segregation measures based on Chan et al. (2014) PNAS paper
 % Both global and network-level measures are created
 
+% Function files required:
+% 1) systemsegregation.m: computes the system segregation measures given the network assignment and FC matrix
+% 2) mat2col.m: converts the 2D FC matrix to a vector column
+
 % Inputs to the script:
 % 1) scriptdir: Path of folder containing systemsegregation.m and comAUC.m scripts
 % 2) FCdir: Path of folder containing FC matrices of each subject
