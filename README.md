@@ -51,8 +51,10 @@ The code and supporting files for the assesssment of functional segregation are 
 
 ### Supporting files:
 
-* `systemsegregation.m`: Function file that generates global and network-level system segregation values given the functional connectivity matrix and the network assignment of the parcellation used
-  
+* `systemsegregation.m`: Function file that generates global and network-level system segregation values given the functional connectivity matrix and the network assignment of the parcellation used.
+
+* `mat2col.m`: Function file that reshapes the 2D functional connectivity matrix to a column vector.
+
 * `Parcellation_142ROIs_networkassignment.mat`:
 	* p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network).
 	* networknames: corresponding network labels. The labels are ordered in the same manner as the network assignment in variable p (i.e., value of 1 pertains to the default network, which is the first label in the variable network names).
