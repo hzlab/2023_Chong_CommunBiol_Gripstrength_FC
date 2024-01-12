@@ -19,22 +19,22 @@ Please refer to the respective sections for more information on the code used:
 Sample data for the above analyses are also located in the `SampleData` folder. Details of the sample data provided are given below:
 
 * `FCmatrices/`:
-	* `Subj001.mat`: Contains `z_mat` which is a 142 x 142 functional connectivity matrix for a specific subject (e.g., Subj001)
-	* `subjectlist.txt`: Text file containing the list of all subject IDs (each subject ID is specified in a separate row)
+	* `Subj001.mat`: Contains `z_mat` which is a 142 x 142 functional connectivity matrix for a specific subject (e.g., Subj001).
+	* `subjectlist.txt`: Text file containing the list of all subject IDs (each subject ID is specified in a separate row).
 
-* `Demographic.csv`: Spreadsheet containing demographic, cognitive, handgrip strength and other participant characteristics
+* `Demographic.csv`: Spreadsheet containing demographic, cognitive, handgrip strength and other participant characteristics.
   
-* `Handgripstrength-relatedFCmeasures.csv`: Spreadsheet containing select subject-level functional connectivity measures that showed significant associations with handgrip strength
+* `Handgripstrength-relatedFCmeasures.csv`: Spreadsheet containing select subject-level functional connectivity measures that showed significant associations with handgrip strength.
   
-* `Segregationmeasures.csv`: Spreadsheet containing global and network-level segregation measures of each subject
+* `Segregationmeasures.csv`: Spreadsheet containing global and network-level segregation measures of each subject.
   
-* `SVA_InterIntraNetworkFCmeasures.csv`: Spreadsheet containing salience/ventral attention inter- and intra-network functional connectivity measures for each subject
+* `SVA_InterIntraNetworkFCmeasures.csv`: Spreadsheet containing salience/ventral attention inter- and intra-network functional connectivity measures for each subject.
   
-* `SVA_IntraNetworkRegionalFCmeasures.csv`: Spreadsheet containing salience/ventral attention intra-network regional functional connectivity measures for each subject
+* `SVA_IntraNetworkRegionalFCmeasures.csv`: Spreadsheet containing salience/ventral attention intra-network regional functional connectivity measures for each subject.
 
 
 Other files:
-`Parcellation_142ROIs.nii`: Nifti file containing all regions-of-interest used in the study
+`Parcellation_142ROIs.nii`: Nifti file containing all regions-of-interest used in the study.
 
 
 ----
@@ -56,7 +56,7 @@ The code and supporting files for the assesssment of functional segregation are 
 * `mat2col.m`: Function file that reshapes the 2D functional connectivity matrix to a column vector.
 
 * `Parcellation_142ROIs_networkassignment.mat`:
-	* p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network).
+	* p: network assignment of the 142 ROI parcellation. Each region is given a number from 1 to 9 (corresponding to a specific network)
 	* networknames: corresponding network labels. The labels are ordered in the same manner as the network assignment in variable p (i.e., value of 1 pertains to the default network, which is the first label in the variable network names).
 
 
@@ -97,27 +97,31 @@ The code and supporting files for the functional decoding analyses are located i
 
 ### Environment setup
 
-Create and activate conda environment named `Decode` from `Decode_environment.yml`
+Create and activate conda environment named `Decode` using the provided file `Decode_environment.yml`. 
 ```sh
 conda env create -f Decode_environment.yml
 conda activate Decode
+```
+Alternatively, reinstall the packages and create the environment using the provided file `Decode_packagelist.txt`.
+```sh
+conda create -n Decode –file Decode_packagelist.txt
 ```
 
 ### Running functional decoding
 
 #### Main files:
 
-* `Part1_DownloadLDA50database.ipynb`: Downloads the LDA50 database from Neurosynth and converts it to NiMARE dataset file
+* `Part1_DownloadLDA50database.ipynb`: Downloads the LDA50 database from Neurosynth and converts it to NiMARE dataset file.
   
-* `Part2_Functionaldecoding.ipynb`: Loads the downloaded LDA50 database and performs discrete functional decoding using the Neurosynth ROI association method
+* `Part2_Functionaldecoding.ipynb`: Loads the downloaded LDA50 database and performs discrete functional decoding using the Neurosynth ROI association method.
 
 #### Supporting files:
 
-* `ROI_056_SalVentAttn_L_PI_RO.nii`: Binarized nifti image of the left posterior insula/frontal operculum region
+* `ROI_056_SalVentAttn_L_PI_RO.nii`: Binarized nifti image of the left posterior insula/frontal operculum region.
   
-* `ROI_069_SalVentAttn_R_MCC_MPC.nii`: Binarized nifti image of the right midcingulate/medial parietal cortex
+* `ROI_069_SalVentAttn_R_MCC_MPC.nii`: Binarized nifti image of the right midcingulate/medial parietal cortex.
   
-* `ROI_074_SalVentAttn_R_AI.nii`: Binarized nifti image of the right anterior insula
+* `ROI_074_SalVentAttn_R_AI.nii`: Binarized nifti image of the right anterior insula.
 
 
 ----
@@ -130,7 +134,7 @@ The code for the mediation analyses is located in the `MediationAnalyses` folder
 
 ### Main files: 
 
-* `Mediation.R`: Runs mediation analyses to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition
+* `Mediation.R`: Runs mediation analyses to examine the mediation effect of functional connectivity on the relationship between handgrip strength and cognition.
 
 
 
@@ -145,4 +149,4 @@ The data supporting this manuscript is available upon request from the correspon
 
 ## Bugs and Questions
 
-Please contact Joanna Su Xian Chong at joanna.chong@nus.edu.sg and Helen Zhou at helen.zhou@nus.edu.sg
+Please contact Joanna Su Xian Chong at joanna.chong@nus.edu.sg and Helen Zhou at helen.zhou@nus.edu.sg.
