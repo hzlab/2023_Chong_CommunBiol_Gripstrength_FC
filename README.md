@@ -1,4 +1,4 @@
-# Higher handgrip strength is linked to higher salience and ventral attention functional network segregation in older adults
+# Higher handgrip strength is linked to higher salience ventral attention functional network segregation in older adults
 
 ## Background
 
